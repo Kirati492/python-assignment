@@ -1,7 +1,6 @@
 product_list = []
 
 def add_product(product_list):
-    """รับชื่อสินค้าและจำนวน (int) แล้วเพิ่มเข้า product_list เป็น dict {name, quantity}"""
     name = input("Enter product name: ")
     qty_text = input("Enter product quantity: ")
     try:
@@ -14,7 +13,6 @@ def add_product(product_list):
     print(f"Added: {name} ({quantity})")
 
 def show_products(product_list):
-    """แสดงรายการสินค้าในรูปแบบลำดับ ชื่อ - จำนวน units"""
     print("Product List:")
     if not product_list:
         print("(empty)")
@@ -23,8 +21,4 @@ def show_products(product_list):
         print(f"{i}. {product['name']} - {product['quantity']} units")
 
 if __name__ == "__main__":
-    # ตัวอย่างการทดสอบโปรแกรม
-    # add_product(product_list)
-    # add_product(product_list)
-    # show_products(product_list)
     pass
