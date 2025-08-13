@@ -5,7 +5,6 @@ class Product:
 
 class Store:
     def __init__(self):
-        # private attribute สำหรับเก็บออบเจกต์ Product
         self.__products = []
 
     def add_product(self, name, quantity):
@@ -22,9 +21,4 @@ class Store:
             print(f"{i}. {product.name} - {product.quantity} units")
 
 if __name__ == "__main__":
-    # ตัวอย่างการทดสอบ
-    # my_store = Store()
-    # my_store.add_product("Laptop", 15)
-    # my_store.add_product("Mouse", 50)
-    # my_store.show_products()
     pass
